@@ -2,6 +2,8 @@ body {
   width: 1020px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  text-align: justify;
 }
 
 .header {
@@ -352,4 +354,4 @@ body {
   width: 220px;
   margin-left: 82px;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style1.css.map */
