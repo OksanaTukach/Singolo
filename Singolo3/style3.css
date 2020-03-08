@@ -1,0 +1,238 @@
+body {
+  width: 1020px;
+  position: relative;
+}
+
+.get-a-quote {
+  width: 100%;
+  height: 654px;
+  background-color: #f06c64;
+  color: #f0d8d9;
+}
+
+.get-a-quote h2 {
+  font-size: 30px;
+  line-height: 18px;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  text-align: left;
+  width: 939px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 67px;
+}
+
+.get-a-quote p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #f0d8d9;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  text-align: left;
+  width: 939px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 28px;
+  text-align: justify;
+  letter-spacing: -0.2px;
+}
+
+.get-a-quote h3 {
+  font-size: 18px;
+  line-height: 18px;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  text-align: left;
+  padding-top: 44px;
+}
+
+.get-a-quote .registration-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 942px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.get-a-quote .registration-contact p {
+  font-size: 11px;
+  line-height: 22px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+  width: 300px;
+  margin-top: -17px;
+  text-align: justify;
+  letter-spacing: 0.4px;
+}
+
+.get-a-quote .registration-contact a {
+  color: #f0d8d9;
+  text-decoration: none;
+}
+
+.get-a-quote .registration-contact .contact-info {
+  width: 300px;
+}
+
+.get-a-quote .registration-contact .contact-info .map {
+  margin-top: -7px;
+}
+
+.get-a-quote .registration-contact .contact-info .map i {
+  margin-right: 10px;
+}
+
+.get-a-quote .registration-contact .contact-info .phone {
+  margin-top: -29px;
+}
+
+.get-a-quote .registration-contact .contact-info .phone i {
+  margin-right: 10px;
+}
+
+.get-a-quote .registration-contact .contact-info .mail {
+  margin-top: -29px;
+}
+
+.get-a-quote .registration-contact .contact-info .mail i {
+  margin-right: 10px;
+}
+
+.get-a-quote .registration-form {
+  width: 618px;
+}
+
+.get-a-quote .registration-form__name input {
+  width: 618px;
+  height: 36px;
+  border-radius: 5px;
+  border: none;
+  background-color: #d6564f;
+  margin-top: 43px;
+}
+
+.get-a-quote .registration-form__email input {
+  width: 618px;
+  height: 36px;
+  border-radius: 5px;
+  border: none;
+  background-color: #d6564f;
+  margin-top: 17px;
+}
+
+.get-a-quote .registration-form__subject input {
+  width: 618px;
+  height: 36px;
+  border-radius: 5px;
+  border: none;
+  background-color: #d6564f;
+  margin-top: 17px;
+}
+
+.get-a-quote .registration-form__describe input {
+  width: 618px;
+  height: 197px;
+  border-radius: 5px;
+  border: none;
+  background-color: #d6564f;
+  margin-top: 17px;
+}
+
+.get-a-quote .registration-form__submit {
+  margin-top: 20px;
+}
+
+.get-a-quote .registration-form__submit input {
+  background-color: #f3dddc;
+  border: none;
+  color: #222222;
+  width: 150px;
+  height: 41px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.get-a-quote .registration-form__submit input:hover {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.get-a-quote .color {
+  width: 100%;
+  height: 6px;
+  margin-top: 8px;
+  background-color: #ea676b;
+}
+
+input::-webkit-input-placeholder {
+  color: #ec7e7e;
+}
+
+input:-ms-input-placeholder {
+  color: #ec7e7e;
+}
+
+input::-ms-input-placeholder {
+  color: #ec7e7e;
+}
+
+input::placeholder {
+  color: #ec7e7e;
+}
+
+footer {
+  height: 75px;
+  background-color: #2d303a;
+}
+
+footer .copy {
+  width: 200px;
+  color: #666d89;
+  margin-left: 43px;
+  font-size: 12px;
+  font-family: "Lato", sans-serif;
+  padding-top: 32px;
+}
+
+footer .icon {
+  width: 32px;
+  height: 32px;
+  border: solid 1px #656d89;
+  border-radius: 50%;
+  margin-right: 6px;
+  text-align: center;
+}
+
+footer .icon:hover {
+  width: 40px;
+  height: 40px;
+}
+
+footer .icon:hover i {
+  color: #c46161;
+  margin-top: 12px;
+}
+
+footer .icon i {
+  color: #656d89;
+  margin-top: 7px;
+  text-align: center;
+}
+
+footer .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 181px;
+  margin-left: 829px;
+  margin-top: -23px;
+}
+/*# sourceMappingURL=style.css.map */
