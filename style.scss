@@ -347,7 +347,7 @@ body {
     }
     &__images {
         width: 958px;
-        height: 618px;
+        height: 620px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -480,12 +480,12 @@ body {
         display: flex;
         justify-content: space-between;
         flex-wrap: nowrap;
-        width: 940px;
+        width: 943px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 45px;
         .human-one {
-            width: 300px;
+            width: 303px;
             height: 442px;
             img {
                 margin-bottom: 12px;
@@ -632,7 +632,7 @@ body {
                 }
             }
             .mail {
-                margin-top: -29px;
+                margin-top: -27px;
                 i {
                     margin-right: 10px;
                 }
@@ -649,13 +649,6 @@ body {
             border: none;
             background-color: #d6564f;
             margin-top: 43px;
-            &:invalid {
-                border: 2px solid red;
-              }
-              
-            &:valid {
-                border: 2px solid green;
-              }
         }
         .email {
             width: 618px;
@@ -664,13 +657,6 @@ body {
             border: none;
             background-color: #d6564f;
             margin-top: 17px;
-            &:invalid {
-                border: 2px solid red;
-              }
-              
-            &:valid {
-                border: 2px solid green;
-              }
         }
         .subject {
             width: 618px;
@@ -678,7 +664,7 @@ body {
             border-radius: 5px;
             border: none;
             background-color: #d6564f;
-            margin-top: 10px;
+            margin-top: 17px;
         }
         .describe {
             width: 618px;

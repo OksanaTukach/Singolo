@@ -404,7 +404,7 @@ body {
 
 .portfolio__images {
   width: 958px;
-  height: 618px;
+  height: 620px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -560,14 +560,14 @@ body {
           justify-content: space-between;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  width: 940px;
+  width: 943px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 45px;
 }
 
 .about-us__human .human-one {
-  width: 300px;
+  width: 303px;
   height: 442px;
 }
 
@@ -742,7 +742,7 @@ body {
 }
 
 .get-a-quote .registration-contact .contact-info .mail {
-  margin-top: -29px;
+  margin-top: -27px;
 }
 
 .get-a-quote .registration-contact .contact-info .mail i {
@@ -762,14 +762,6 @@ body {
   margin-top: 43px;
 }
 
-.get-a-quote .registration-form .name:invalid {
-  border: 2px solid red;
-}
-
-.get-a-quote .registration-form .name:valid {
-  border: 2px solid green;
-}
-
 .get-a-quote .registration-form .email {
   width: 618px;
   height: 36px;
@@ -779,21 +771,13 @@ body {
   margin-top: 17px;
 }
 
-.get-a-quote .registration-form .email:invalid {
-  border: 2px solid red;
-}
-
-.get-a-quote .registration-form .email:valid {
-  border: 2px solid green;
-}
-
 .get-a-quote .registration-form .subject {
   width: 618px;
   height: 36px;
   border-radius: 5px;
   border: none;
   background-color: #d6564f;
-  margin-top: 10px;
+  margin-top: 17px;
 }
 
 .get-a-quote .registration-form .describe {
