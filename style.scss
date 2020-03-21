@@ -1,3 +1,7 @@
+html {
+    width: 1020px;
+    scroll-behavior: smooth;
+}
 body {
     width: 1020px;
     margin-left: auto;
@@ -5,11 +9,15 @@ body {
     position: relative;
     text-align: justify;
 
+
 }
 .header {
     height: 54px;
     background-color: #2d303a;
     padding-top: 40px;
+    position: sticky;
+    top: 0;
+    z-index: 5;
     h1 {
         font-size: 25px;
         line-height: 6px;
@@ -42,15 +50,12 @@ body {
                 font-weight: 700;
                 text-align: left;
                 &:hover {
-                    //font-size: 1.1rem;
-                    text-decoration: underline;
-                }
-            }
-            .header__home {
-                & a {
                     color: #f06c64;
                 }
             }
+        }
+        .active a {
+            color: #f06c64;
         }
     }
     .color {
@@ -63,26 +68,84 @@ body {
 .slider {
     width: 1020px;
     height: 600px;
-    background-color: #f06c64;
     position: relative;
-    &__iphone-vertical {
-        width: 240px;
-        height: 490px;
-        position: absolute;
-        top: 50px;
-        left: 108px;
+    z-index: 1;
+    overflow: hidden;
+    background-color: rgb(255, 244, 224);
+    .item {
+        display: none;
+        position: relative;
+        animation: 0.5s ease-in-out;
+        margin: 0 auto;
+      }
+      
+    .item.active,
+    .item.next {
+        display: block;
     }
-    &__iphone-horizontal {
-        width: 490px;
-        height: 240px;
-        position: absolute;
-        top: 169px;
-        left: 419px;
+    
+    .slider__one.item.next {
+        position: relative;
+        top: 0px;
+        width: 100%;
     }
+    .slider__two.item.next {
+        position: relative;
+        top: -600px;
+        width: 100%;
+    }
+    .slider__two.item.to-left {
+        position: relative;
+        top: -600px;
+        width: 100%;
+    }
+    .slider__two.item.to-right {
+        position: relative;
+        top: -600px;
+        width: 100%;
+    }
+    .item.to-left {
+        animation-name: left;
+       
+      }
+      
+    .item.from-right {
+        animation-name: right;
+    }
+      
+    .item.to-right {
+        animation-name: right;
+        animation-direction: reverse;
+    }
+      
+    .item.from-left {
+        animation-name: left;
+        animation-direction: reverse;
+        
+    }
+      
+      @keyframes left {
+        from {
+          left: 0;
+        }
+        to {
+          left: -100%;
+        }
+      }
+      
+      @keyframes right {
+        from {
+          left: 100%;
+        }
+        to {
+          left: 0;
+        }
+      }
     &__left {
         position: absolute;
         top: 271px;
         left: 42px;
+        z-index: 2;
         &:hover {
             font-size: 60px;
             cursor: pointer;
@@ -91,7 +154,7 @@ body {
         i {
             font-size: 45px;
             font-weight: 900;
-            color: #c94549;
+            color: rgba($color: #000000, $alpha: 0.3);
             &:hover {
                 font-size: 60px;
             }
@@ -102,6 +165,7 @@ body {
         position: absolute;
         top: 271px;
         left: 965px;
+        z-index: 2;
         &:hover {
             font-size: 60px;
             cursor: pointer;
@@ -110,26 +174,105 @@ body {
         i {
             font-size: 45px;
             font-weight: 900;
-            color: #c94549;
+            color: rgba($color: #000000, $alpha: 0.3);
             &:hover {
                 font-size: 60px;
             }
             
         }
     }
-    .color {
-        width: 100%;
-        height: 6px;
-        background-color: #ea676b;
-        top: 594px;
-        position: absolute;
+    .slider__one {
+        width: 1020px;
+        height: 600px;
+        background-color: #f06c64;
+        position: relative;
+        z-index: 1;
+
+        .slider__iphone-vertical {
+            width: 240px;
+            height: 490px;
+            position: absolute;
+            top: 50px;
+            left: 108px;
+            cursor: pointer;
+        }
+        .slider__iphone-horizontal {
+            width: 490px;
+            height: 240px;
+            position: absolute;
+            top: 169px;
+            left: 419px;
+            cursor: pointer;
+        }
+        
+            
+        .color {
+            width: 100%;
+            height: 6px;
+            background-color: #ea676b;
+            top: 594px;
+            position: absolute;
+        }
+        .iphone1 {
+            position: absolute;
+            z-index: 3;
+            background-color: #2d303a;
+            width: 189px;
+            height: 335px;
+            left: 126px;
+            top: 118px;
+            border-radius: 2px;
+            cursor: pointer;
+            &.disabled {
+                display: none;
+            }
+        }
+        .iphone2 {
+            position: absolute;
+            z-index: 3;
+            background-color: #2d303a;
+            width: 333px;
+            height: 189px;
+            right: 202px;
+            top: 189px;
+            border-radius: 2px;
+            cursor: pointer;
+            &.disabled {
+                display: none;
+            }
+        }
     }
+    .slider__two {
+        width: 1020px;
+        height: 600px;
+        background-color: #648BF0;
+        position: relative;
+        z-index: 1;
+
+        &-img {
+            position: relative;
+            padding-top: 40px;
+            text-align: center;
+        }   
+        .color {
+            width: 100%;
+            height: 6px;
+            background-color: rgb(115, 151, 243);
+            top: 594px;
+            position: absolute;
+        }
+    }
+    .slider__two.item.next {
+        top: -600px;
+    }
+    
 }
 .our-srvices {
     width: 100%;
     height: 500px;
     background-color: #f2f2f2;
     position: relative;
+    z-index: 1;
     h3 {
         font-size: 30px;
         line-height: 18px;
@@ -345,17 +488,22 @@ body {
         letter-spacing: -0.2px;
         
     }
-    &__images {
-        width: 958px;
+    .images {
+        width: 941px;
         height: 620px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        top: 66px;
+        display: grid;
+        grid-template: repeat(3, 187px)/repeat(4, 220px);
+        grid-gap: 20px;
         margin-left: auto;
         margin-right: auto;
-        overflow: hidden;
-        .image {
+        text-align: center;
+        .portfolio__image {
             margin-top: 18px;
+            position: relative;
+            width: 220px;
+            height: 187px;
+            border: 0px solid #f06c64;
         }
     }
     &__button {
@@ -363,6 +511,9 @@ body {
         margin-left: auto;
         margin-right: auto;
         margin-top: 13px;
+        input {
+            outline: none;
+        }
         .all {
             color: #c5c5c5;
             border-color: #c5c5c5;
@@ -377,7 +528,6 @@ body {
             text-align: left;
             margin-right: 7px;
             &:hover {
-                font-size: 16px;
                 cursor: pointer;
             }
         }
@@ -394,7 +544,6 @@ body {
             text-align: left;
             margin-right: 5px;
             &:hover {
-                font-size: 16px;
                 cursor: pointer;
             }
         }
@@ -412,7 +561,6 @@ body {
             text-align: left;
             margin-right: 5px;
             &:hover {
-                font-size: 16px;
                 cursor: pointer;
             }
         }
@@ -429,7 +577,6 @@ body {
             font-weight: 400;
             text-align: left;
             &:hover {
-                font-size: 16px;
                 cursor: pointer;
             }
         }
@@ -641,6 +788,9 @@ body {
     }
     .registration-form {
         width: 618px;
+        input {
+            outline:none;
+        }
 
         .name {
             width: 618px;
@@ -698,6 +848,13 @@ body {
 }
 input::placeholder {
     color: #ec7e7e;
+}
+.invisible {
+    height: 0;
+    position: relative;
+    top:-75px;
+    visibility: hidden;
+    width: 100%;
 }
 footer {
     height: 75px;
