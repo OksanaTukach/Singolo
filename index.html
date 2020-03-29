@@ -12,8 +12,18 @@
 <body class="body">
     <div id="home"></div>
     <header class="header" id='header'>
-        <h1>SINGOLO<span>*</span></h1> 
-        <nav class="navbar" id="nav">
+        <div class="sandwich-container">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="sandwich-container rotate invisible">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <h1 class="logo">SINGOLO<span>*</span></h1> 
+        <nav class="navbar invisible" id="nav">
             <ul id="header__navigation">
                 <li class="header__home header__nav active" id="header-home">
                     <a href="#home" >home</a>
@@ -40,13 +50,13 @@
         <div class="slider__right">
             <i class="fa fa-angle-right" id="slider__right" aria-hidden="true"></i>
         </div>
-        <div class="slider__one item active">
-            <div id="iphone1" class="iphone1 disabled"></div>
-            <div id="iphone2" class="iphone2 disabled"></div>
+        <div class="slider__one item active">    
             <div class="slider__iphone-vertical">
+                <div id="iphone1" class="iphone1 disabled"></div>
                 <img src="assets/iphone_vertical_jpg.jpg" class="iphone-one">
             </div>
             <div class="slider__iphone-horizontal">
+                <div id="iphone2" class="iphone2 disabled"></div>
                 <img src="assets/iphone_horizontal_jpg.jpg" class="iphone-two">
             </div>
         </div>
@@ -57,7 +67,7 @@
             <div class="color"></div>
         </div>
     </div>
-    <div class="invisible" id="services"></div>
+    <div class="invis" id="services"></div>
     <div class="our-srvices">
         <h3>Our Services</h3>
         <p class="big">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.Fusce dapibus, tellus ac cursus commodo,tortor mauris condimenum nibh.</p>
@@ -118,7 +128,7 @@
             </div>
         </div>
     </div>
-    <div id="portfolio" class="invisible"></div>
+    <div id="portfolio" class="invis"></div>
     <div class="portfolio" >
         <h3>Portfolio</h3>
         <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
@@ -143,7 +153,7 @@
             <img src="assets/portfolio-images/12.jpg" class="portfolio__image" alt="image 12" >
         </div>
         </div>
-    <div id="about" class="invisible"></div>
+    <div id="about" class="invis"></div>
     <div class="about-us">
         <h3>About Us</h3>
         <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula,eget lacinia odio sem nec elit.Fusce dapibus,tellus ac cursus commodo,tortor mauris condimentum nibh.</p>
@@ -207,7 +217,7 @@
             </div>
         </div>
     </div>
-    <div class="invisible" id="contact"></div>
+    <div class="invis" id="contact"></div>
     <div class="get-a-quote">
         <h2>Get a Quote</h2>
         <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>

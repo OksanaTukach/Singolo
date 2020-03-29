@@ -11,6 +11,7 @@ function change_color(event) {
 }
 
     const menuBlock = document.querySelectorAll('#header__navigation li');
+    const navbar = document.querySelector('.navbar')
     const serviceBlock = document.getElementById('services');
     const portfolioBlock = document.getElementById('portfolio');
     const aboutBlock = document.getElementById('about');
@@ -18,8 +19,13 @@ function change_color(event) {
     const headerHeight = document.getElementById('header').offsetHeight;
   
     document.getElementById('header__navigation').addEventListener('click', () => {
+      navbar.classList.add('invisible');
+      SecondSandwichBtn.classList.add('invisible');
+      singolo.classList.remove('sandwich-singolo');
+      firstSandwichBtn.classList.remove('invisible');
       menuBlock.forEach(element => element.classList.remove('active'));
       event.target.classList.add('active');
+      
     });
   
     window.addEventListener('scroll', () => {
@@ -53,6 +59,29 @@ function change_color(event) {
         document.querySelector('.header__contact').classList.add('active');
       };
     });
+
+
+/*Sandwich */
+const firstSandwichBtn = document.querySelector('.sandwich-container');
+const SecondSandwichBtn = document.querySelector('.rotate');
+const containerNav = document.querySelector('.navbar');
+const singolo = document.querySelector('.logo')
+
+firstSandwichBtn.addEventListener('click',(event)=>{
+    containerNav.classList.remove('invisible');
+    SecondSandwichBtn.classList.remove('invisible');
+    singolo.classList.add('sandwich-singolo');
+    firstSandwichBtn.classList.add('invisible');
+
+});
+SecondSandwichBtn.addEventListener('click',(event)=>{
+    containerNav.classList.add('invisible');
+    SecondSandwichBtn.classList.add('invisible');
+    singolo.classList.remove('sandwich-singolo');
+    firstSandwichBtn.classList.remove('invisible');
+
+});
+
 
 /* Portfolio */
 
