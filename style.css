@@ -1773,6 +1773,10 @@ input::placeholder {
   width: 100%;
 }
 
+.blur {
+  opacity: 0.5;
+}
+
 footer {
   height: 75px;
   background-color: #2d303a;

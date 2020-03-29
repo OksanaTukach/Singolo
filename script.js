@@ -23,6 +23,7 @@ function change_color(event) {
       SecondSandwichBtn.classList.add('invisible');
       singolo.classList.remove('sandwich-singolo');
       firstSandwichBtn.classList.remove('invisible');
+      blur.classList.remove('blur')
       menuBlock.forEach(element => element.classList.remove('active'));
       event.target.classList.add('active');
       
@@ -65,13 +66,15 @@ function change_color(event) {
 const firstSandwichBtn = document.querySelector('.sandwich-container');
 const SecondSandwichBtn = document.querySelector('.rotate');
 const containerNav = document.querySelector('.navbar');
-const singolo = document.querySelector('.logo')
+const singolo = document.querySelector('.logo');
+const blur = document.querySelector('.wrapper')
 
 firstSandwichBtn.addEventListener('click',(event)=>{
     containerNav.classList.remove('invisible');
     SecondSandwichBtn.classList.remove('invisible');
     singolo.classList.add('sandwich-singolo');
     firstSandwichBtn.classList.add('invisible');
+    blur.classList.add('blur');
 
 });
 SecondSandwichBtn.addEventListener('click',(event)=>{
@@ -79,6 +82,7 @@ SecondSandwichBtn.addEventListener('click',(event)=>{
     SecondSandwichBtn.classList.add('invisible');
     singolo.classList.remove('sandwich-singolo');
     firstSandwichBtn.classList.remove('invisible');
+    blur.classList.remove('blur');
 
 });
 
